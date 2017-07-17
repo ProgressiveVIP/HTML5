@@ -2,26 +2,39 @@ body {
   color: white;
   font-size: 30px;
 }
-#header {
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+.header {
   background: #3d3c70;
   height: 200px;
   margin-bottom: 10px;
   }
 
-#content {
+.content {
   background: #3d3c66;
   min-height: 500px;
   width: 70%;
   float: left;
   }
 
-#sidebar {
+.sidebar {
   background: #3d3c66;
   min-height: 500px;
   width: 30%;
   float: left;
 }
-#footer {
+.footer {
   background: #3d3c70;
   height: 200px;
   margin-top: 10px;
