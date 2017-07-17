@@ -1,3 +1,7 @@
+body {
+  color: white;
+  font-size: 30px;
+}
 #header {
   background: #3d3c66;
   height: 200px;
